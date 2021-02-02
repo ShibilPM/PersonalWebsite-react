@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Typical from "react-typical";
 
 class Heading extends React.Component {
   render() {
@@ -10,6 +11,11 @@ class Heading extends React.Component {
           <h1>
             I'am <Name>Shibil</Name>
           </h1>
+          <Typical
+            loop={Infinity}
+            wrapper="p"
+            steps={["Developer....", 1000, "Designer....", 1000]}
+          />
         </MainHeading>
       </div>
     );

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import Heading from "../../components/heading/heading.component";
-import Header from "../../components/header/header.component";
 
 import { ReactComponent as ManWithLap } from "../../assets/manwithlap.svg";
 
