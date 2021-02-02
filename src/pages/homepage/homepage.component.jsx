@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Heading from "../../components/heading/heading.component";
+import Header from "../../components/header/header.component";
 
 import { ReactComponent as ManWithLap } from "../../assets/manwithlap.svg";
 
@@ -10,7 +11,7 @@ class HomePage extends React.Component {
     return (
       <Home className="homepage">
         <Heading />
-        <ManWithLap />
+        <ManWithLap className="image" />
       </Home>
     );
   }
@@ -26,10 +27,15 @@ const Home = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  padding: 7px 14px;
   h1 {
     margin-block-start: 0;
     margin-block-end: 0;
     font-weight: normal;
     font-size: 2.5rem;
+  }
+
+  .image {
+    height: 400px;
   }
 `;
