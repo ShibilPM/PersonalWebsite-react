@@ -29,6 +29,7 @@ const EduPageStyle = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   color: white;
+  padding-bottom: 9.5rem;
   .edudetail {
     padding-right: 356px;
     padding-top: 156px;

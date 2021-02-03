@@ -39,6 +39,7 @@ const NavBar = styled.div`
   justify-content: space-around;
   margin-bottom: 25px;
   position: absolute;
+  z-index: 2;
   color: #e9e6e6;
   .logo-container {
     height: 100%;
