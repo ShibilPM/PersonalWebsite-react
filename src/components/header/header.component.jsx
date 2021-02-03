@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
@@ -11,12 +12,12 @@ class Header extends React.Component {
           <Logo className="logo" />
         </div>
         <div className="options">
-          <div className="option" to="/shop">
+          <Link className="option" to="/">
             Home
-          </div>
-          <div className="option" to="/shop">
+          </Link>
+          <Link className="option" to="/about">
             About
-          </div>
+          </Link>
           <div className="option" to="/shop">
             Project
           </div>
