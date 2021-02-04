@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+import Contact from "../../components/contact/contact.component";
+
 class ContactPage extends React.Component {
   render() {
     return (
       <ContactPageStyle>
-        <h1>Contact page</h1>
+        <Contact />
       </ContactPageStyle>
     );
   }
