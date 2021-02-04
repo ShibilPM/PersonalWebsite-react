@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+import Project from "../../components/project/project.component";
+
 class ProjectPage extends React.Component {
   render() {
     return (
       <ProjectPageStyle>
-        <h1>Project Page</h1>
+        <Project />
       </ProjectPageStyle>
     );
   }
@@ -14,5 +16,6 @@ class ProjectPage extends React.Component {
 export default ProjectPage;
 
 const ProjectPageStyle = styled.div`
+  padding-top: 90px;
   color: white;
 `;

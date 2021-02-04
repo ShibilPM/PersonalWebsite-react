@@ -18,9 +18,9 @@ class Header extends React.Component {
           <Link className="option" to="/about">
             About
           </Link>
-          <div className="option" to="/project">
+          <Link className="option" to="/project">
             Project
-          </div>
+          </Link>
           <Link className="option" to="/contact">
             Contact
           </Link>
