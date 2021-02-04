@@ -79,7 +79,6 @@ const DevelopementStyle = styled(motion.div)`
   padding-left: 36px;
   background-color: #e7e3e3;
   padding-bottom: 30px;
-
   .devimage {
     display: flex;
     align-items: center;

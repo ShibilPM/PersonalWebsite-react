@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+
+//firebase
 import { db } from "../../firebase/firebase";
 
 const Contact = () => {
@@ -33,38 +36,108 @@ const Contact = () => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact Us 🤳</h1>
+    <ContactStyle>
+      <div className="heading">
+        <h2>Contact Me</h2>
+      </div>
+      <div className="contactform">
+        <div className="social">
+          <span>
+            <i className="fas fa-envelope"></i> shibilpm3232@gmail.com
+          </span>
+          <span>
+            <i class="fas fa-mobile-alt"></i> +91-8592064262
+          </span>
+        </div>
+        <div className="formstyle">
+          <form className="form" onSubmit={handleSubmit}>
+            <div>
+              <label>Name</label>
+              <br />
+              <input
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+            </div>
 
-      <label>Name</label>
-      <input
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+            <div>
+              <label>Email</label>
+              <br />
+              <input
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
 
-      <label>Email</label>
-      <input
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+            <div>
+              <label>Message</label>
+              <br />
+              <textarea
+                cols="42.5"
+                rows="8"
+                placeholder="Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              ></textarea>
+            </div>
 
-      <label>Message</label>
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-
-      <button
-        type="submit"
-        style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
-      >
-        Submit
-      </button>
-    </form>
+            <div>
+              <button
+                type="submit"
+                style={{ background: loader ? "#ccc" : "#62b3e2" }}
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </ContactStyle>
   );
 };
 
 export default Contact;
+
+const ContactStyle = styled.div`
+  .heading {
+    text-align: center;
+  }
+
+  .contactform {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 300px 800px;
+    grid-gap: 5px;
+    justify-content: center;
+    padding-left: 40%;
+    padding-right: auto;
+  }
+
+  .social {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-gap: 5px;
+    padding-top: 8%;
+  }
+
+  .form {
+    display: grid;
+    grid-template-rows: 50px 50px 150px 50px;
+    grid-gap: 15px;
+  }
+
+  button {
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 80px;
+  }
+`;

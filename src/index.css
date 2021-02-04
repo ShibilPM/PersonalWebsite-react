@@ -10,3 +10,9 @@ ul {
   list-style-type: none;
   padding-inline-start: 0px;
 }
+
+input {
+  width: 40%;
+  border-radius: 5px;
+  padding: 5px;
+}
