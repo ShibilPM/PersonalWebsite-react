@@ -8,9 +8,9 @@ class Header extends React.Component {
   render() {
     return (
       <NavBar>
-        <div className="logo-container" to="/">
+        <Link className="logo-container" to="/">
           <Logo className="logo" />
-        </div>
+        </Link>
         <div className="options">
           <Link className="option" to="/">
             Home
@@ -18,12 +18,12 @@ class Header extends React.Component {
           <Link className="option" to="/about">
             About
           </Link>
-          <div className="option" to="/shop">
+          <div className="option" to="/project">
             Project
           </div>
-          <div className="option" to="/shop">
+          <Link className="option" to="/contact">
             Contact
-          </div>
+          </Link>
         </div>
       </NavBar>
     );
