@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Education from "../../components/education/education.component";
 import Development from "../../components/development/development.component";
 import Designing from "../../components/designing/designing.component";
+import Footer from "../../components/footer/footer.component";
 
 class AboutPage extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class AboutPage extends React.Component {
         <Education />
         <Development />
         <Designing />
+        <Footer />
       </AboutPageStyle>
     );
   }
