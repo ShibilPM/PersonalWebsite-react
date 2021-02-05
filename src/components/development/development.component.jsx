@@ -74,24 +74,53 @@ const Development = () => {
 export default Development;
 
 const DevelopementStyle = styled(motion.div)`
-  display: flex;
-  padding-top: 30px;
-  padding-left: 36px;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-gap: 2.5%;
+  justify-content: center;
+  align-items: center;
   background-color: #e7e3e3;
   padding-bottom: 30px;
+  width: 100%;
   .devimage {
     display: flex;
     align-items: center;
   }
 
   .devimage_img {
-    width: 600px;
+    width: 90%;
     height: auto;
   }
 
   .line {
-    width: 200%;
+    width: 80%;
     height: 5px;
     background-color: #bdb8b8;
+  }
+
+  @media (max-width: 760px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    .devskills {
+      width: 80%;
+    }
+
+    .line {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;

@@ -104,6 +104,8 @@ const Contact = () => {
 export default Contact;
 
 const ContactStyle = styled.div`
+  width: 100%;
+
   .heading {
     text-align: center;
   }
@@ -111,11 +113,9 @@ const ContactStyle = styled.div`
   .contactform {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 300px 800px;
-    grid-gap: 5px;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5%;
     justify-content: center;
-    padding-left: 40%;
-    padding-right: auto;
   }
 
   .social {
@@ -123,6 +123,7 @@ const ContactStyle = styled.div`
     grid-template-rows: 30px 30px;
     grid-gap: 5px;
     padding-top: 8%;
+    text-align: end;
   }
 
   .form {
@@ -139,5 +140,26 @@ const ContactStyle = styled.div`
     border-radius: 3px;
     height: 25px;
     width: 80px;
+  }
+
+  @media (max-width: 768px) {
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0;
+    }
+
+    .contactform {
+      padding: 5px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      width: 95%;
+    }
   }
 `;

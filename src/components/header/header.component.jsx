@@ -21,23 +21,22 @@ class Header extends React.Component {
 export default Header;
 
 const NavBar = styled.div`
-  background-color: black;
+  background: black;
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 25px;
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   color: #e9e6e6;
   .logo-container {
     padding-top: 20px;
-    height: 100%;
+    height: 30px;
     width: 200px;
 
     @media (max-width: 757px) {
       position: fixed;
-      top: 20px;
       left: 20px;
     }
   }

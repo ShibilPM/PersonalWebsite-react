@@ -26,15 +26,12 @@ class HomePage extends React.Component {
 export default HomePage;
 
 const Home = styled(motion.div)`
-  width: 100vw;
   height: 100vh;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.5rem;
-  padding: 1rem 6.2rem;
-  overflow: hidden;
   h1 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -44,19 +41,16 @@ const Home = styled(motion.div)`
 
   .image {
     height: 400px;
-    padding-right: 13rem;
   }
 
-  @media (max-width: 757px) {
-    height: 100vh;
-    display: flex;
+  @media (max-width: 720px) {
+    padding-top: 120px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 90px;
+    justify-content: center;
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 `;

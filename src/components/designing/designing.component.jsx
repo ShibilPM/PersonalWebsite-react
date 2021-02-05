@@ -15,7 +15,7 @@ const Designing = () => {
       initial="hidden"
       animate={controls}
     >
-      <div className="devskills">
+      <div className="desskills">
         {" "}
         <h2>Designing</h2>
         <ul>
@@ -46,31 +46,53 @@ const Designing = () => {
 export default Designing;
 
 const DesignStyle = styled(motion.div)`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2.5%;
   color: white;
   padding-top: 30px;
 
-  .devskills {
+  .desskills {
     display: flex;
     flex-direction: column;
   }
 
   .desimage {
-    width: 600px;
-    height: 400px;
   }
 
   .line {
-    width: 300%;
+    width: 80%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line60 {
-    width: 180%;
+    width: 65%;
     height: 5px;
     color: white;
+  }
+
+  @media (max-width: 760px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    .desskills {
+      width: 80%;
+    }
+
+    .line {
+      width: 100%;
+    }
+    .desimage {
+      display: none;
+    }
   }
 `;

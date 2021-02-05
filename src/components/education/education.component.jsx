@@ -24,21 +24,38 @@ export default Education;
 
 const EduPageStyle = styled.div`
   display: grid;
-  grid-template-columns: 500px auto;
+  grid-template-columns: 40% 40%;
   grid-gap: 2px;
-  align-content: center;
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 9.5rem;
+  padding-bottom: 3rem;
   .edudetail {
   }
   .eduimage {
-    width: 500px;
+    width: auto;
     height: auto;
   }
 
-  @media (max-width: 1168px) {
-    display: grid;
+  @media (max-width: 945px) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: 760px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .edudetail {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 630px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;

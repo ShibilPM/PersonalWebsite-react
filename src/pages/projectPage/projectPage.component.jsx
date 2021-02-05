@@ -16,6 +16,6 @@ class ProjectPage extends React.Component {
 export default ProjectPage;
 
 const ProjectPageStyle = styled.div`
-  padding-top: 90px;
+  padding-top: 10rem;
   color: white;
 `;

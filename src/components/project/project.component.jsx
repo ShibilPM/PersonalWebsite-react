@@ -26,26 +26,25 @@ export default Project;
 const ProjectStyle = styled.div`
   display: grid;
   grid-template-columns: 40% 40%;
-  grid-gap: 10px;
+  grid-gap: 5px;
   align-items: center;
   justify-content: center;
-  padding: 5.5rem 2.5rem 5.5rem 3.5rem;
   position: relative;
   text-align: center;
   .firstpro {
-    width: 450px;
+    width: 100%;
     height: auto;
   }
 
   .secondpro {
-    width: 450px;
+    width: 100%;
     height: auto;
   }
 
   .firstcaption {
     position: absolute;
     top: 45%;
-    left: 32%;
+    left: 30%;
     transform: translate(-50%, -50%);
     opacity: 0;
   }
@@ -53,7 +52,7 @@ const ProjectStyle = styled.div`
   .secondcaption {
     position: absolute;
     top: 45%;
-    right: 20%;
+    right: 17%;
     transform: translate(-50%, -50%);
     opacity: 0;
   }
@@ -79,6 +78,68 @@ const ProjectStyle = styled.div`
 
     .secondcaption {
       opacity: 1;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .firstcaption {
+      top: 35%;
+    }
+
+    .secondcaption {
+      top: 35%;
+      right: 13%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+
+    .firstcaption {
+      top: 7rem;
+      left: 50%;
+    }
+
+    .secondcaption {
+      top: 27rem;
+      left: 50%;
+    }
+  }
+
+  @media (max-width: 527px) {
+    .firstcaption {
+      top: 6rem;
+    }
+
+    .secondcaption {
+      top: 19rem;
+    }
+  }
+
+  @media (max-width: 477px) {
+    .firstcaption {
+      top: 5rem;
+    }
+
+    .secondcaption {
+      top: 17rem;
+    }
+  }
+
+  @media (max-width: 401px) {
+    .firstcaption {
+      display: none;
+    }
+
+    .secondcaption {
+      display: none;
     }
   }
 `;
