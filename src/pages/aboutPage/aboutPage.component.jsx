@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
+import { pageAnimation } from "../../animation/animation";
 
 import Education from "../../components/education/education.component";
 import Development from "../../components/development/development.component";
@@ -9,7 +12,12 @@ import Footer from "../../components/footer/footer.component";
 class AboutPage extends React.Component {
   render() {
     return (
-      <AboutPageStyle>
+      <AboutPageStyle
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+      >
         <Education />
         <Development />
         <Designing />
@@ -21,6 +29,6 @@ class AboutPage extends React.Component {
 
 export default AboutPage;
 
-const AboutPageStyle = styled.div`
+const AboutPageStyle = styled(motion.div)`
   padding-top: 50px;
 `;
