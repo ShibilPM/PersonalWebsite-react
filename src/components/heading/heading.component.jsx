@@ -41,4 +41,8 @@ const MainHeading = styled(motion.div)`
 const Name = styled.span`
   font-size: 5rem;
   font-family: "Yusei Magic", sans-serif;
+
+  @media (max-width: 757px) {
+    font-size: 4rem;
+  }
 `;

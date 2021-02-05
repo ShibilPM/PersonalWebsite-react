@@ -23,22 +23,22 @@ class Education extends React.Component {
 export default Education;
 
 const EduPageStyle = styled.div`
-  display: flex;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: 500px auto;
+  grid-gap: 2px;
+  align-content: center;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   color: white;
   padding-bottom: 9.5rem;
   .edudetail {
-    padding-right: 356px;
-    padding-top: 156px;
   }
   .eduimage {
-    position: absolute;
-    width: 600px;
+    width: 500px;
     height: auto;
-    top: 30px;
-    right: 156px;
+  }
+
+  @media (max-width: 1168px) {
+    display: grid;
   }
 `;

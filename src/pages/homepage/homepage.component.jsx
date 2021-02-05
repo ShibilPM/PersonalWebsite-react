@@ -31,9 +31,9 @@ const Home = styled(motion.div)`
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 1.5rem;
-  padding: 7px 14px;
+  padding: 1rem 6.2rem;
   overflow: hidden;
   h1 {
     margin-block-start: 0;
@@ -44,13 +44,19 @@ const Home = styled(motion.div)`
 
   .image {
     height: 400px;
+    padding-right: 13rem;
   }
 
   @media (max-width: 757px) {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 90px;
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 `;

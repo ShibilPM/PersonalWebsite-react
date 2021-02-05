@@ -31,13 +31,13 @@ const NavBar = styled.div`
   z-index: 2;
   color: #e9e6e6;
   .logo-container {
+    padding-top: 20px;
     height: 100%;
-    width: 70px;
-    margin-bottom: 15px;
+    width: 200px;
 
     @media (max-width: 757px) {
       position: fixed;
-      top: -1px;
+      top: 20px;
       left: 20px;
     }
   }
@@ -45,6 +45,6 @@ const NavBar = styled.div`
   .logo {
     width: 6rem;
     height: auto;
-    margin-top: -20px;
+    margin-top: 0;
   }
 `;
