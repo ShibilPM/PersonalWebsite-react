@@ -31,7 +31,7 @@ const NavBar = styled.div`
   z-index: 10;
   color: #e9e6e6;
   .logo-container {
-    padding-top: 20px;
+    padding-top: 15px;
     height: 30px;
     width: 200px;
 
