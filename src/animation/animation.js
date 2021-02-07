@@ -25,6 +25,54 @@ export const titleAnimation = {
   },
 };
 
+export const line90Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "90%",
+    transition: { duration: 2 },
+  },
+};
+
+export const line80Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "80%",
+    transition: { duration: 2 },
+  },
+};
+
+export const line70Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "70%",
+    transition: { duration: 2 },
+  },
+};
+
+export const line60Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "60%",
+    transition: { duration: 2 },
+  },
+};
+
+export const line50Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "50%",
+    transition: { duration: 2 },
+  },
+};
+
+export const line40Animation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "40%",
+    transition: { duration: 2 },
+  },
+};
+
 export const fade = {
   hidden: { opacity: 0 },
   show: {

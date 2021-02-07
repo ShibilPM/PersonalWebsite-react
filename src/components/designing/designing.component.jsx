@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 
 import { ReactComponent as DesImage } from "../../assets/design.svg";
 import { useScroll } from "../scroll/scroll";
-import { reveal } from "../../animation/animation";
+import {
+  reveal,
+  line70Animation,
+  line60Animation,
+  line40Animation,
+} from "../../animation/animation";
 
 const Designing = () => {
   const [element, controls] = useScroll();
@@ -15,27 +20,29 @@ const Designing = () => {
       initial="hidden"
       animate={controls}
     >
-      <div className="desskills">
-        {" "}
-        <h2>Designing</h2>
-        <ul>
-          <li>
-            <p>Illustrator</p>
-            <div className="line70"></div>
-          </li>
-          <li>
-            <p>Adobe Xd</p>
-            <div className="line60" />
-          </li>
-          <li>
-            <p>Figma</p>
-            <div className="line40" />
-          </li>
-        </ul>
-      </div>
+      <div className="container">
+        <div className="desskills">
+          {" "}
+          <h2>Designing</h2>
+          <ul>
+            <li>
+              <p>Illustrator</p>
+              <motion.div variants={line70Animation} className="line70" />
+            </li>
+            <li>
+              <p>Adobe Xd</p>
+              <motion.div variants={line60Animation} className="line60" />
+            </li>
+            <li>
+              <p>Figma</p>
+              <motion.div variants={line40Animation} className="line40" />
+            </li>
+          </ul>
+        </div>
 
-      <div className="designimage">
-        <DesImage className="desimage" />
+        <div className="designimage">
+          <DesImage className="desimage" />
+        </div>
       </div>
     </DesignStyle>
   );
@@ -44,13 +51,18 @@ const Designing = () => {
 export default Designing;
 
 const DesignStyle = styled(motion.div)`
-  display: grid;
-  grid-template-columns: 35% 35%;
-  align-items: center;
-  justify-content: center;
-  grid-gap: 2.5%;
   color: white;
   padding-top: 30px;
+  width: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-left: 10%;
+  }
 
   .desskills {
     display: flex;
@@ -61,53 +73,55 @@ const DesignStyle = styled(motion.div)`
   }
 
   .line90 {
-    width: 72%;
+    width: 90%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line80 {
-    width: 64%;
+    width: 80%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line70 {
-    width: 56%;
+    width: 70%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line60 {
-    width: 48%;
+    width: 60%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line50 {
-    width: 40%;
+    width: 50%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line40 {
-    width: 32%;
+    width: 40%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   @media (max-width: 760px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     h2 {
       text-align: center;
     }
 
     .desskills {
-      width: 80%;
+      width: 100%;
     }
 
     .line90 {
