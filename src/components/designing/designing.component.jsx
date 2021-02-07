@@ -21,17 +21,15 @@ const Designing = () => {
         <ul>
           <li>
             <p>Illustrator</p>
-            <div className="line">
-              <span className="line60" />
-            </div>
+            <div className="line70"></div>
           </li>
           <li>
             <p>Adobe Xd</p>
-            <div className="line" />
+            <div className="line60" />
           </li>
           <li>
             <p>Figma</p>
-            <div className="line" />
+            <div className="line40" />
           </li>
         </ul>
       </div>
@@ -62,16 +60,40 @@ const DesignStyle = styled(motion.div)`
   .desimage {
   }
 
-  .line {
-    width: 80%;
+  .line90 {
+    width: 72%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line80 {
+    width: 64%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line70 {
+    width: 56%;
     height: 5px;
     background-color: #bdb8b8;
   }
 
   .line60 {
-    width: 65%;
+    width: 48%;
     height: 5px;
-    color: white;
+    background-color: #bdb8b8;
+  }
+
+  .line50 {
+    width: 40%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line40 {
+    width: 32%;
+    height: 5px;
+    background-color: #bdb8b8;
   }
 
   @media (max-width: 760px) {
@@ -88,8 +110,40 @@ const DesignStyle = styled(motion.div)`
       width: 80%;
     }
 
-    .line {
-      width: 100%;
+    .line90 {
+      width: 90%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line80 {
+      width: 80%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line70 {
+      width: 70%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line60 {
+      width: 60%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line50 {
+      width: 50%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line40 {
+      width: 40%;
+      height: 5px;
+      background-color: #bdb8b8;
     }
     .desimage {
       display: none;

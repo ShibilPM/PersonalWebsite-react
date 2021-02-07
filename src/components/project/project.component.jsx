@@ -10,11 +10,11 @@ class Project extends React.Component {
       <ProjectStyle>
         <div className="firstpro">
           <img src={imageOne} alt="" />
-          <h2 className="firstcaption">Completed</h2>
+          <span className="firstcaption">Completed</span>
         </div>
         <div className="secondpro">
           <img src={imageTwo} alt="" />
-          <h2 className="secondcaption">Working On</h2>
+          <span className="secondcaption">Working On</span>
         </div>
       </ProjectStyle>
     );
@@ -25,34 +25,38 @@ export default Project;
 
 const ProjectStyle = styled.div`
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: auto auto;
   grid-gap: 5px;
   align-items: center;
   justify-content: center;
-  position: relative;
+  padding-left: 9%;
   text-align: center;
+  width: 80%;
+
   .firstpro {
     width: 100%;
     height: auto;
+    position: relative;
   }
 
   .secondpro {
     width: 100%;
     height: auto;
+    position: relative;
   }
 
   .firstcaption {
     position: absolute;
-    top: 45%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
   }
 
   .secondcaption {
     position: absolute;
-    top: 45%;
-    right: 17%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
   }
@@ -81,17 +85,6 @@ const ProjectStyle = styled.div`
     }
   }
 
-  @media (max-width: 950px) {
-    .firstcaption {
-      top: 35%;
-    }
-
-    .secondcaption {
-      top: 35%;
-      right: 13%;
-    }
-  }
-
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -100,46 +93,6 @@ const ProjectStyle = styled.div`
 
     img {
       width: 80%;
-    }
-
-    .firstcaption {
-      top: 7rem;
-      left: 50%;
-    }
-
-    .secondcaption {
-      top: 27rem;
-      left: 50%;
-    }
-  }
-
-  @media (max-width: 527px) {
-    .firstcaption {
-      top: 6rem;
-    }
-
-    .secondcaption {
-      top: 19rem;
-    }
-  }
-
-  @media (max-width: 477px) {
-    .firstcaption {
-      top: 5rem;
-    }
-
-    .secondcaption {
-      top: 17rem;
-    }
-  }
-
-  @media (max-width: 401px) {
-    .firstcaption {
-      display: none;
-    }
-
-    .secondcaption {
-      display: none;
     }
   }
 `;

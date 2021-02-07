@@ -23,47 +23,47 @@ const Development = () => {
         <ul>
           <li>
             <p>HTML5</p>
-            <div className="line" />
+            <div className="line90" />
           </li>
           <li>
             <p>CSS3</p>
-            <div className="line" />
+            <div className="line80" />
           </li>
           <li>
             <p>JavaScript</p>
-            <div className="line" />
+            <div className="line70" />
           </li>
           <li>
             <p>React</p>
-            <div className="line" />
+            <div className="line70" />
           </li>
           <li>
             <p>BootStrap</p>
-            <div className="line" />
+            <div className="line80" />
           </li>
           <li>
             <p>Nodejs</p>
-            <div className="line" />
+            <div className="line40" />
           </li>
           <li>
             <p>PHP</p>
-            <div className="line" />
+            <div className="line60" />
           </li>
           <li>
             <p>Python</p>
-            <div className="line" />
+            <div className="line40" />
           </li>
           <li>
             <p>Java</p>
-            <div className="line" />
+            <div className="line40" />
           </li>
           <li>
             <p>C</p>
-            <div className="line" />
+            <div className="line70" />
           </li>
           <li>
             <p>C++</p>
-            <div className="line" />
+            <div className="line70" />
           </li>
         </ul>
       </div>
@@ -92,8 +92,38 @@ const DevelopementStyle = styled(motion.div)`
     height: auto;
   }
 
-  .line {
-    width: 80%;
+  .line90 {
+    width: 72%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line80 {
+    width: 64%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line70 {
+    width: 56%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line60 {
+    width: 48%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line50 {
+    width: 40%;
+    height: 5px;
+    background-color: #bdb8b8;
+  }
+
+  .line40 {
+    width: 32%;
     height: 5px;
     background-color: #bdb8b8;
   }
@@ -112,14 +142,46 @@ const DevelopementStyle = styled(motion.div)`
       width: 80%;
     }
 
-    .line {
-      width: 100%;
+    .line90 {
+      width: 90%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line80 {
+      width: 80%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line70 {
+      width: 70%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line60 {
+      width: 60%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line50 {
+      width: 50%;
+      height: 5px;
+      background-color: #bdb8b8;
+    }
+
+    .line40 {
+      width: 40%;
+      height: 5px;
+      background-color: #bdb8b8;
     }
   }
 
   @media (max-width: 630px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
