@@ -27,13 +27,12 @@ const NavBar = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 25px;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   color: #e9e6e6;
   .logo-container {
     padding-top: 15px;
     height: 30px;
-    width: 200px;
 
     @media (max-width: 757px) {
       position: fixed;

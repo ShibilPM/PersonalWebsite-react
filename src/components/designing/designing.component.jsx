@@ -55,6 +55,12 @@ const DesignStyle = styled(motion.div)`
   padding-top: 30px;
   width: 100%;
 
+  h2 {
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -118,6 +124,8 @@ const DesignStyle = styled(motion.div)`
 
     h2 {
       text-align: center;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
     }
 
     .desskills {
