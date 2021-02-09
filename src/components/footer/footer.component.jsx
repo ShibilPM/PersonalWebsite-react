@@ -12,7 +12,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyle = styled.div`
-  padding: 30px auto;
   color: #616060;
   text-align: center;
+  padding-bottom: 20px;
 `;

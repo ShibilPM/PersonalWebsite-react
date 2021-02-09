@@ -154,7 +154,7 @@ const DevelopementStyle = styled(motion.div)`
     }
 
     .devskills {
-      width: 80%;
+      width: 100%;
     }
 
     .line90 {

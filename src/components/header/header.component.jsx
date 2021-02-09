@@ -22,7 +22,7 @@ export default Header;
 
 const NavBar = styled.div`
   background: black;
-  height: 70px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-around;

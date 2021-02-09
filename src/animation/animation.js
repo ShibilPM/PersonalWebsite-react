@@ -6,7 +6,7 @@ export const pageAnimation = {
     opacity: 1,
     transition: {
       staggerChildren: 0.25,
-      duration: 0.5,
+      duration: 1,
       when: "beforeChildren",
     },
   },
