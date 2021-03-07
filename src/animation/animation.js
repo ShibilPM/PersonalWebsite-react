@@ -102,7 +102,7 @@ export const photoAnimation = {
     transition: {
       type: "tween",
       ease: "easeOut",
-      duration: 1,
+      duration: 0.5,
       delay: 0.5,
     },
   },

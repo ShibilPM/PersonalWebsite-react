@@ -17,7 +17,6 @@ class ContactPage extends React.Component {
         animate="show"
       >
         <Contact />
-        <Footer />
       </ContactPageStyle>
     );
   }

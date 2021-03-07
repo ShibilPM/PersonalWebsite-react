@@ -6,6 +6,7 @@ import Header from "./components/header/header.component";
 import AboutPage from "./pages/aboutPage/aboutPage.component";
 import ContactPage from "./pages/contactPage/contactPage.component";
 import ProjectPage from "./pages/projectPage/projectPage.component";
+import Footer from "./components/footer/footer.component";
 
 function App() {
   return (

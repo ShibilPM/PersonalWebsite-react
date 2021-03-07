@@ -30,8 +30,11 @@ const Home = styled(motion.div)`
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: 1.5rem;
+  width: 80%;
+  padding-left: 10%;
+
   h1 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -40,17 +43,22 @@ const Home = styled(motion.div)`
   }
 
   .image {
-    height: 400px;
+    width: 50%;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 770px) {
     padding-top: 120px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 80vh;
 
     h1 {
       font-size: 1.8rem;
+    }
+
+    .image {
+      width: 100%;
     }
   }
 `;

@@ -21,7 +21,9 @@ class AboutPage extends React.Component {
         <Education />
         <Development />
         <Designing />
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </AboutPageStyle>
     );
   }
