@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/PersonalWebsite-react/static/css/main.d6961b52.chunk.css",
+    "main.js": "/PersonalWebsite-react/static/js/main.536efb16.chunk.js",
+    "main.js.map": "/PersonalWebsite-react/static/js/main.536efb16.chunk.js.map",
+    "runtime-main.js": "/PersonalWebsite-react/static/js/runtime-main.4a5ccf12.js",
+    "runtime-main.js.map": "/PersonalWebsite-react/static/js/runtime-main.4a5ccf12.js.map",
+    "static/js/2.3cb64ba0.chunk.js": "/PersonalWebsite-react/static/js/2.3cb64ba0.chunk.js",
+    "static/js/2.3cb64ba0.chunk.js.map": "/PersonalWebsite-react/static/js/2.3cb64ba0.chunk.js.map",
+    "static/js/3.3b336e95.chunk.js": "/PersonalWebsite-react/static/js/3.3b336e95.chunk.js",
+    "static/js/3.3b336e95.chunk.js.map": "/PersonalWebsite-react/static/js/3.3b336e95.chunk.js.map",
+    "index.html": "/PersonalWebsite-react/index.html",
+    "static/css/main.d6961b52.chunk.css.map": "/PersonalWebsite-react/static/css/main.d6961b52.chunk.css.map",
+    "static/js/2.3cb64ba0.chunk.js.LICENSE.txt": "/PersonalWebsite-react/static/js/2.3cb64ba0.chunk.js.LICENSE.txt",
+    "static/media/design.3e555be0.svg": "/PersonalWebsite-react/static/media/design.3e555be0.svg",
+    "static/media/education.aa69d95a.svg": "/PersonalWebsite-react/static/media/education.aa69d95a.svg",
+    "static/media/logo.63a35656.svg": "/PersonalWebsite-react/static/media/logo.63a35656.svg",
+    "static/media/manwithlap.df21501e.svg": "/PersonalWebsite-react/static/media/manwithlap.df21501e.svg",
+    "static/media/p1-1.cc4412e3.png": "/PersonalWebsite-react/static/media/p1-1.cc4412e3.png",
+    "static/media/p2-1.6abc048a.png": "/PersonalWebsite-react/static/media/p2-1.6abc048a.png",
+    "static/media/skill1.177e5b29.svg": "/PersonalWebsite-react/static/media/skill1.177e5b29.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a5ccf12.js",
+    "static/js/2.3cb64ba0.chunk.js",
+    "static/css/main.d6961b52.chunk.css",
+    "static/js/main.536efb16.chunk.js"
+  ]
+}
